@@ -10,6 +10,8 @@
     "babel": "^6.23.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cheerio": "^1.0.0",
@@ -31,18 +33,21 @@
     "imagemin": "^7.0.1",
     "imagemin-webp": "^5.1.0",
     "jshint": "^2.11.0",
+    "node-static": "^0.7.11",
     "sass-blocks": "0.0.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2",
     "yarn": "^1.21.1"
   },
   "scripts": {
     "test:lint": "eslint . --cache",
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "build": "webpack",
-    "start": "webpack --watch"
+    "start": "webpack-dev-server --env development",
+    "build": "webpack --env production",
+    "serv": "static build"
   },
   "author": "Zotoff",
   "license": "ISC"

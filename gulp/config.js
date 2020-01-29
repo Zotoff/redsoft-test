@@ -1,4 +1,4 @@
 module.exports = {
   root: './build',
-  dev: './dev'
+  dev: './dev',
 };
