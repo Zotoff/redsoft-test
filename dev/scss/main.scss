@@ -1,0 +1,11 @@
+@import './common/variables';
+@import './common/fonts';
+@import './common/mixins';
+@import './common/base';
+@import './common/normalize';
+
+/*Blocks*/
+@import '../template/blocks/button/style.scss';
+@import '../template/blocks/button/style.scss';
+@import '../template/blocks/search/style.scss';
+

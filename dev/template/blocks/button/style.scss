@@ -1,0 +1,39 @@
+.button {
+  display: block;
+  width: 118px;
+  height: 48px;
+  border: none;
+  outline: none;
+
+  background-color: $main-brown;
+  cursor: pointer;
+  transition: all .5s ease-in;
+
+  @include merriweather-bold;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #ffffff;
+
+  @include flex(center, center);
+
+  &:hover {
+    cursor: pointer;
+    background-color: $hover-brown;
+  }
+}
+.button_disabled {
+  background-color: $disable-brown
+}
+
+.button_basket {
+  background-color: $basket-brown;
+}
+
+.button_shadowed {
+  box-shadow: $button-shadow;
+}
+
+.button_search {
+  width: 122px;
+}

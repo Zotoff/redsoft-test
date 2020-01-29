@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  font-family: "Merriweather-Regular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  max-width: 1180px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Template headings*/
+
+h1 {
+  @include merriweather-bold;
+  font-size: 24px;
+  line-height: 150%;
+}
+h2 {
+  @include merriweather-regular;
+  font-size: 18px;
+  line-height: 150%;
+}
+h3 {
+  @include merriweather-bold;
+  font-size: 16px;
+  line-height: 150%;
+}
+h4 {
+  @include merriweather-bold;
+  font-size: 14px;
+  line-height: 150%;
+}
+h5 {
+  @include merriweather-regular;
+  font-size: 14px;
+  line-height: 150%;
+}
+h6 {
+  @include merriweather-light;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+p {
+  @include merriweather-regular;
+  font-size: 14px;
+  line-height: 150%;
+  color: $font-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include flex(center, center);
+  background: transparent;
+}
