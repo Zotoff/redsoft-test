@@ -1,6 +1,7 @@
 .button {
   display: block;
   width: 118px;
+  min-width: 118px;
   height: 48px;
   border: none;
   outline: none;
@@ -36,4 +37,19 @@
 
 .button_search {
   width: 122px;
+}
+.button__basket__label {
+  position: relative;
+  padding-left: 13px;
+  &::before {
+    content: "";
+    font-family: "FontAwesome", sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: -1px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    font-size: 15px;
+  }
 }
