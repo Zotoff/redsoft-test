@@ -4,6 +4,7 @@
   "description": "Test task for redsoft",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "gulp-ext-replace": "^0.3.0"
   },
   "devDependencies": {
