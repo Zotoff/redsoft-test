@@ -1,0 +1,17 @@
+.pictures {
+  width: 100%;
+  height: auto;
+
+  margin-top: 45px;
+}
+.pictures .container {
+  justify-content: flex-start;
+}
+.pictures__heading {
+  margin-bottom: 39px;
+}
+.pictures__wrapper {
+  width: 100%;
+  height: auto;
+  @include flex(space-between, center);
+}

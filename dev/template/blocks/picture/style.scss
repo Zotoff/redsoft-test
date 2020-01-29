@@ -1,0 +1,42 @@
+.picture {
+  width: 280px;
+  height: auto;
+  @include flex(center, center);
+
+  border: 1px solid #E7E7E7;
+}
+.picture__image {
+  width: 280px;
+  height: 168px;
+}
+.picture__content {
+  width: 232px;
+  height: auto;
+  @include flex(center, center);
+
+  margin-bottom: 24px;
+}
+.picture__heading {
+  margin-left: 24px;
+  margin-bottom: 25px;
+}
+.picture__price {
+  height: auto;
+  @include flex(flex-start, center)
+}
+.picture__price__left,
+.picture__price__right {
+  width: 49%;
+  height: 48px;
+}
+.price__value {
+  @include merriweather-bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: $font-color;
+}
+.price__value_old {
+  @include merriweather-light;
+  text-decoration-line: line-through;
+  color: #A0A0A0;
+}

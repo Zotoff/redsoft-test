@@ -1,0 +1,83 @@
+.footer {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  bottom: 0px;
+
+  background-color: $footer-bg;
+}
+.footer .container {
+  @include flex(space-between, center);
+
+  width: 100%;
+  height: auto;
+}
+.footer__left,
+.footer__right {
+  width: 49%;
+}
+.footer__right {
+  @include flex(space-between, center);
+}
+.footer__contacts__wrapper {
+  @include flex(space-between, center);
+  width: 100%;
+}
+.footer__contacts {
+  list-style: none;
+  width: 100%;
+  @include flex(flex-end, center);
+}
+.footer__contacts__item {
+  @include merriweather-regular;
+  font-size: 14px;
+  line-height: 150%;
+  color: $footer-contacts-color;
+  margin-right: 48px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  & a {
+    text-decoration: none;
+    color: $footer-contacts-color;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.footer__contacts__item_phone {
+  & a {
+    &:before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+
+      background: url("../img/phone.svg") no-repeat center;
+      background-size: contain;
+
+      position: absolute;
+      top: 3px;
+      left: -20px;
+    }
+  }
+}
+.footer__contacts__item_address {
+  & a {
+    &:before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+
+      background: url("../img/pointer.svg") no-repeat center;
+      background-size: contain;
+
+      position: absolute;
+      top: 3px;
+      left: -20px;
+    }
+  }
+}

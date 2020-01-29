@@ -12,3 +12,17 @@ mixin webp(image, format)
 mixin button(text, href, mode)
     - mode = mode || ''
     a(href=""+ href +"", class="button " + mode)= text
+
+mixin picture(picture_image, picture_heading, price_old, price_new, picture_mode)
+    - picture_mode = picture_mode || ''
+    .picture(data-mode=""+picture_mode+"")
+        .picture__image
+            img(src=""+picture_image+"", alt=""+picture_heading+"")
+        .picture__content
+            h2.picture__heading= picture_heading
+            .picture__price
+                .picture__price__left
+                    p.price__value.price__value_old= price_old
+                    p.price__value= price_new
+                .picture__price__right
+                    +button('Купить', '/')

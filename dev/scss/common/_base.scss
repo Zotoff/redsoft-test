@@ -3,13 +3,14 @@ html {
 }
 
 body {
-  height: auto;
+  height: 100vh;
   margin: 0;
   font-family: "Merriweather-Regular", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   position: relative;
+  background-color: #ffffff;
 }
 
 .wrapper {

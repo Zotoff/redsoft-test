@@ -10,26 +10,124 @@
     <title>Redsoft-test</title>
   </head>
   <body>
-    <nav>
-      <p>Navigation here</p>
-    </nav>
-    <h1>check</h1>
-    <h2>checks</h2>
-    <h3>check</h3><a class="button " href="/">Найти</a>
-    <form class="search-form" action="" method="">
-      <div class="search-form__group">
-        <label for="name">
-          <input class="search-form__input" type="text" value="" placeholder="Поиск по названию картины">
-        </label>
+    <header>
+      <nav class="navigation">
+        <div class="container">
+          <div class="navigation__left">
+            <div class="navigation__logo"><a href="/"><img src="img/logo.svg"></a></div>
+            <ul class="navigation__list">
+              <li class="navigation__list__item"><a href="">Каталог</a></li>
+              <li class="navigation__list__item"><a href="">Доставка</a></li>
+              <li class="navigation__list__item"><a href="">Оплата</a></li>
+              <li class="navigation__list__item"><a href="">О галерее</a></li>
+            </ul>
+          </div>
+          <div class="navigation__right">
+            <form class="search-form" action="" method="">
+              <div class="search-form__group">
+                <label for="name">
+                  <input class="search-form__input" type="text" value="" placeholder="Поиск по названию картины">
+                </label>
+              </div>
+              <div class="search-form__group">
+                <button class="button button_shadowed button_search" type="search">Найти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="pictures">
+        <div class="container">
+          <h1 class="pictures__heading">Картины эпохи Возрождения</h1>
+          <div class="pictures__wrapper">
+            <div class="picture" data-mode="">
+              <div class="picture__image"><img src="img/picture1.png" alt="«Рождение Венеры» Сандро Боттичелли"/></div>
+              <div class="picture__content">
+                <h2 class="picture__heading">«Рождение Венеры» Сандро Боттичелли</h2>
+                <div class="picture__price">
+                  <div class="picture__price__left">
+                    <p class="price__value price__value_old">2 000 000</p>
+                    <p class="price__value">1 000 000</p>
+                  </div>
+                  <div class="picture__price__right"><a class="button " href="/">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="picture" data-mode="">
+              <div class="picture__image"><img src="img/picture2.png" alt="«Тайная вечеря»  Леонардо да Винчи"/></div>
+              <div class="picture__content">
+                <h2 class="picture__heading">«Тайная вечеря»  Леонардо да Винчи</h2>
+                <div class="picture__price">
+                  <div class="picture__price__left">
+                    <p class="price__value price__value_old"></p>
+                    <p class="price__value">1 000 000</p>
+                  </div>
+                  <div class="picture__price__right"><a class="button " href="/">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="picture" data-mode="">
+              <div class="picture__image"><img src="img/picture3.png" alt="«Сотворение Адама» Микеланджело"/></div>
+              <div class="picture__content">
+                <h2 class="picture__heading">«Сотворение Адама» Микеланджело</h2>
+                <div class="picture__price">
+                  <div class="picture__price__left">
+                    <p class="price__value price__value_old">6 000 000</p>
+                    <p class="price__value">5 000 000</p>
+                  </div>
+                  <div class="picture__price__right"><a class="button " href="/">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="picture" data-mode="sold">
+              <div class="picture__image"><img src="img/picture4.png" alt="«Урок анатомии» Рембрандт"/></div>
+              <div class="picture__content">
+                <h2 class="picture__heading">«Урок анатомии» Рембрандт</h2>
+                <div class="picture__price">
+                  <div class="picture__price__left">
+                    <p class="price__value price__value_old"></p>
+                    <p class="price__value"></p>
+                  </div>
+                  <div class="picture__price__right"><a class="button " href="/">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left">
+          <nav class="navigation">
+            <div class="navigation__left">
+              <div class="navigation__logo"><a href="/"><img src="img/logo.svg"></a></div>
+              <ul class="navigation__list">
+                <li class="navigation__list__item"><a href="">Каталог</a></li>
+                <li class="navigation__list__item"><a href="">Доставка</a></li>
+                <li class="navigation__list__item"><a href="">Оплата</a></li>
+                <li class="navigation__list__item"><a href="">О галерее</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__right">
+          <div class="footer__contacts__wrapper">
+            <ul class="footer__contacts">
+              <li class="footer__contacts__item footer__contacts__item_phone"><a href="tel:+74955555555">+7 (495) 555-55-55</a></li>
+              <li class="footer__contacts__item footer__contacts__item_address"><a href="">г. Москва, ул. Расплетина, 24</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="search-form__group">
-        <button class="button button_shadowed button_search" type="search">Найти</button>
-      </div>
-    </form>
-    <footer>
-      <p>footer here</p>
     </footer>
-    <script></script>
+    <script src="js/index.min.js"></script>
     <script></script>
     <script></script>
   </body>

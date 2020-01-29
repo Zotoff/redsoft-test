@@ -1,0 +1,9 @@
+nav.navigation
+    .navigation__left
+        .navigation__logo
+            a(href="/")
+                img(src="img/logo.svg")
+        ul.navigation__list
+            each item in ['Каталог', 'Доставка', 'Оплата', 'О галерее']
+                li.navigation__list__item
+                    a(href="")= item

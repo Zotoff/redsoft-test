@@ -1,10 +1,6 @@
 extends ./template.pug
 block content
-    include blocks/nav/nav
-    h1 check
-    h2 checks
-    h3 check
-
-    +button('Найти', '/')
-
-    include blocks/search/index
+    header
+        include blocks/nav/nav
+    main
+        include blocks/pictures/pictures
